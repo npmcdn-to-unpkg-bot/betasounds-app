@@ -1,0 +1,23 @@
+.sans {
+  font-family: "Source Sans Pro";
+}
+
+.serif {
+  font-family: serif;
+}
+
+.dark {
+  color: #17191B;
+}
+
+.bg-dark {
+  background-color: #17191B;
+}
+
+.white {
+  color: #fff;
+}
+
+.bg-white {
+  background-color: #fff;
+}
