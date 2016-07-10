@@ -1,11 +1,26 @@
 <header>
   <div class="fixed top-0 col-12 white bg-dark">
-    <div class="flex items-center justify-center mx-auto p2" style="max-width: 960px;">
-    <ul class="flex list-style-none m0 p0">
-      <li class="px2">Popular</li>
-      <li class="px2">Genres</li>
-      <li class="px2">My playlists</li>
-    </ul>
+    <div class="flex items-center justify-between mx-auto p2" style="max-width: 960px;">
+      <!-- Logo -->
+      <img class="fit" src="<%= @logo %>" width="100">
+
+      <!-- Main nav -->
+      <nav>
+        <ul class="flex list-style-none m0 p0">
+          <li class="px2">Popular</li>
+          <li class="px2">Genres</li>
+          <li class="px2">My playlists</li>
+        </ul>
+      </nav>
+
+      <!-- User nav -->
+      <ul class="flex list-style-none m0 m0">
+        <li class="px2 flex items-center">
+          <span class="mr2">Profile</span>
+          <span class="inline-block circle bg-white" style="width: 30px; height: 30px;"></span>
+        </li>
+      </ul>
+    </div>
   </div>
 </header>
 

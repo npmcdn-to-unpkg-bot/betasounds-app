@@ -14,15 +14,19 @@
   </head>
 
   <body class="m0 sans dark">
-    <%= render "header.html" %>
+    <!-- Header -->
+    <%= render "header.html", logo: static_path(@conn, "/images/temp-logo.png") %>
 
+    <!-- Flash alerts -->
     <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
     <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
 
-    <main role="main">
+    <!-- Main content -->
+    <main role="main" class="mx-auto" style="max-width: 960px;">
       <%= render @view_module, @view_template, assigns %>
     </main>
 
+    <!-- Scripts -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>

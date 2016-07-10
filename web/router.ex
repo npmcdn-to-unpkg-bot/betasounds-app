@@ -22,6 +22,8 @@ defmodule BetasoundsApp.Router do
 
   scope "/api", BetasoundsApp do
     pipe_through :api
+
+    get "/songs", SongController, :index
   end
 
   defp default_title(conn, _params) do
