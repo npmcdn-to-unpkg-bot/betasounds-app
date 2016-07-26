@@ -1,6 +1,8 @@
 defmodule BetasoundsApp.Song do
   use BetasoundsApp.Web, :model
 
+  @derive {Poison.Encoder, only: [:title]}
+
   schema "songs" do
     field :title, :string
 
@@ -12,7 +14,7 @@ defmodule BetasoundsApp.Song do
   """
   def changeset(song, params \\ %{}) do
     song
-    |> cast(params, [:title, :body])
+    |> cast(params, [:title])
     |> validate_required([:title])
   end
 end

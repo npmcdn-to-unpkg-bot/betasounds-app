@@ -4,6 +4,6 @@ defmodule BetasoundsApp.PageController do
   def index(conn, _params) do
     conn
     |> assign(:title, "Home")
-    |> render "index.html"
+    |> render("index.html")
   end
 end

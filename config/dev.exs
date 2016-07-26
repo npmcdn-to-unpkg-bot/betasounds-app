@@ -34,7 +34,6 @@ config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
 config :betasounds_app, BetasoundsApp.Repo,
-  adapter: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "postgres",
   database: "betasounds_app_dev",
